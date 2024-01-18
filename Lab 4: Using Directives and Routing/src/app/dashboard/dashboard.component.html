@@ -1,0 +1,39 @@
+
+<header class="masthead">
+    <div class="px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <div class="d-flex justify-content-center ">
+            <div class="text-center">
+                <h1 class="mx-auto my-0 text-uppercase">Dashboard</h1><br>
+                <!-- <h2>ng Directives using *ngIf Condition</h2>  -->
+                <div *ngIf="showText">
+                    This is to show when showText is Truee!!!
+                </div>
+
+                <button (click)="toggleText()">Toggle Text</button>
+                <br><br>
+                <button (click) = "toggleText()">
+                    {{ showText ? 'Hide Text' : 'Show Text'}}
+                </button>
+                <br><br>
+                <div class="text-white"> 
+                    <table class="table text-white table-striped table-bordered" border = "1"> 
+                        <thead> 
+                            <tr> 
+                                <th>Name</th> 
+                                <th>Email</th> 
+                                <th>Role</th> 
+                            </tr> 
+                        </thead> 
+                            <tbody> 
+                                <tr *ngFor="let user of staff"> 
+                                <td>{{user.firstName}} {{user.lastName}}</td> 
+                                <td>{{user.email}}</td> 
+                                <td>{{user.role}}</td> 
+                            </tr> 
+                            </tbody> 
+                    </table> 
+                </div> 
+            </div>
+        </div>
+    </div>
+</header>
