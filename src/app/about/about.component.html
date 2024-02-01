@@ -1,0 +1,25 @@
+  <!-- Header-->
+  <header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder">About the Organization</h1>
+            <p class="lead fw-normal text-white-50 mb-0">Learn how the team and comitee leadership are shaping the world of conferences, get the latest conference news and updates on our blog, and contact us for guidance.</p>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class= "mt-5">
+        <h1>About</h1>
+        <p class="lead">We prioritize transparency in all our meetings and conferences, fostering an inclusive environment where ideas are not only welcomed but actively encouraged. 
+            Our commitment to openness ensures that all stakeholders have a clear understanding of our decision-making processes. In our meetings, we emphasize open dialogue, inviting team members 
+            to freely express their thoughts and contribute innovative ideas.</p><br>
+            <div class="text-center"><a class="btn btn-outline-dark mt-auto" (click)="clickMe(); showData($event)">Click here to get a free gift!</a></div><br>
+            <div class="text-center"><button class="btn btn-outline-dark mt-auto text-center" (click)="reset()">Reset</button></div><br>
+            <p class="text-center"><strong > You claimed the gift {{ clickCount }} times.</strong></p>
+            <p class="text-center" [style.font-size]="getFontSize()">{{ giftEmoji }}</p>
+
+
+        <p class="lead">Conferences are a part of the legacy of this organization and continue today to be a catalyst for creativity. We are committed to developing strategies that support and expand the conference activities throughout the world.</p>
+    </div>
+</div>

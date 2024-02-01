@@ -1,0 +1,36 @@
+  <!-- Header-->
+  <header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder">Join Our Mailing List!</h1>
+            <p class="lead fw-normal text-white-50 mb-0">Join an meet thousands academicans around the glode and stay updated!</p>
+        </div>
+    </div>
+</header><br>
+
+    <div class="contact-container"><br>
+            <h1 class="message">LEAVE A MESSAGE</h1>
+            <div>
+                <label for="firstName">First Name:</label>
+                <div class="text-left"><input (input)="onFirstNameChange($event)" name="firstName" placeholder="Enter your first name" class="form-control" /></div>
+            </div>
+            
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input (input)="onLastNameChange($event)" name="lastName" placeholder="Enter your last name" class="form-control" />
+            </div>
+            <p>Full Name: {{ getFullName() }}</p>
+            
+            <div>
+                <label for="email">Email:</label>
+                <input (input)="onEmailChange($event)" name="email" placeholder="Enter your email address" class="form-control" />
+            </div>
+            <p>Email Address: {{ email || 'Enter email address' }}</p>
+            
+            <div>
+                <label for="institution">Institution/Affiliation:</label>
+                <input (input)="onInstitutionChange($event)" name="institution" placeholder="Enter your academic institution" class="form-control" />
+            </div>
+            <p>Academic Institution: {{ institution || 'Academic institution' }}</p>
+            
+    </div>

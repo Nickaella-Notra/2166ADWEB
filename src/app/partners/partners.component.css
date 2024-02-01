@@ -1,0 +1,40 @@
+form.form-example {
+    display: table;
+  }
+  
+  div.form-example {
+    display: table-row;
+  }
+  
+  label,
+  input {
+    display: table-cell;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    padding-right: 10px;
+    color:white;
+  }
+  .contact-container{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 36, 81, 0.1);
+    padding: 0 3% 3% 3%;
+    color:white;
+  }
+  .message{
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+    color: white;
+  }
+  .contactsection{
+    height: auto;
+    text-align: center;
+    align-content: center;
+    color:white;
+  }
+  

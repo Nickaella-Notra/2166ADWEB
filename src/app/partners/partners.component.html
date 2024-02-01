@@ -1,0 +1,24 @@
+<header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+            <h1 class="display-4 fw-bolder">Research Conferences</h1>
+            <p class="lead fw-normal text-white-50 mb-0">Join our online events this 2024!</p>
+        </div>
+    </div>
+</header><br><br>
+<main class="mt-6">
+    <table class="table-auto border-collapse border-2 border-gray-500 mx-auto">
+        <tr class="text-center">
+          <th class="border-2 border-gray-400 px-4 py-2">Company</th>
+          <th class="border-2 border-gray-400 px-4 py-2">Image Trademark/Logos</th>
+          <th class="border-2 border-gray-400 px-4 py-2">Sponsorship</th>
+          <th class="border-2 border-gray-400 px-4 py-2">Go to Website</th>
+        </tr>
+        <tr *ngFor="let company of companies" class="text-center">
+          <td class="border-2 border-gray-400 px-4 py-2">{{ company.name }}</td>
+          <td class="border-2 border-gray-400 px-4 py-2"><img src="{{ company.logo }}" alt="{{ company.name }} Logo" width="50" height="50"></td>
+          <td class="border-2 border-gray-400 px-4 py-2">{{ company.sponsorship }}</td>
+          <td class="border-2 border-gray-400 px-4 py-2"><a href="{{ company.website }}">{{ company.name }}</a></td>
+        </tr>
+    </table>
+</main>
