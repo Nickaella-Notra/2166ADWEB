@@ -1,0 +1,61 @@
+<!-- <h1>DATE PIPE</h1>
+<div> 
+  Today's date :- {{presentDate}} 
+</div>
+
+<div> 
+  Today's date :- {{presentDate | date }}
+</div>
+
+<div>
+  This is a short date:- {{presentDate | date:'shortDate'}}<br/>
+  This line shows the medium date :- {{presentDate | date:'mediumDate'}}<br/>
+  This line shows the full date :- {{presentDate | date:'fullDate'}}<br/>
+  This will show a formatted date :- {{presentDate | date:'M/dd/yyyy'}}<br/>
+  This indicates the hours and minutes :- {{presentDate | date:'h:mm'}}<br/>
+  Nickaella Notra
+</div>
+
+<h1>TEXT-FO PIPES</h1>
+<div>
+  Date with uppercase :- {{presentDate | date: 'fullDate' | uppercase}} <br/>
+  Date with lowercase :- {{presentDate | date: 'fullDate' | lowercase}} <br/>
+</div>
+
+<h1>BUILT-IN PIPES</h1>
+<div> 
+  Seconds changing in Time: {{ time$ | async | date:'mediumTime' }} 
+</div> -->
+
+
+
+NICKAELLA A. NOTRA<br>
+WD-301
+
+<h1>TEXT-FORMAT PIPES</h1>
+    My name is {{ "nickaella notra" | titlecase}}<br>
+    My nickname is {{ 'nicka' | uppercase }}<br>
+    My pen name is {{ 'ACEY' | lowercase}}
+<h1>DATE PIPES</h1>
+    Full date :- {{presentDate | date:'full'}}<br>
+    Full time date :- {{presentDate | date:'fullTime'}}<br>
+    Custom date :- {{presentDate | date: "MMM dd, yyyy 'at' hh:mm a"}}
+<h1>CURRENCY PIPES</h1>
+    Price: {{ price | currency }}<br/>
+    Price: {{ price | currency:'PHP':'symbol-narrow':'4.2-2' }}<br>
+    Price: {{ price | currency:'EUR':'symbol-narrow':'4.2-2' }}
+<h1>DECIMAL PIPES</h1>
+    Round off: 6.5 = {{ 6.5 | number: '1.0-0'}}<br>
+    2 decimal points: {{ 3.54563224684 | number: '1.1-2'}}<br>
+    With comma and 2 decimal points: {{ 294056.015143 | number: '3.1-2'}}
+
+<h1>JSON PIPES</h1>
+  <pre>{{ data | json}}</pre>
+<h1>PERCENT PIPES</h1>
+    Percentage Value: {{ pnum | percent }}<br>
+    Percentage Value: {{ price | percent }}<br>
+    Percentage Value: {{ pnum | percent: '1.2' }}
+<h1>SLICE PIPES</h1>
+    Sliced number: {{ name | slice: 0-1}}<br>
+    Sliced Array: {{ myArray | slice: 1:3 }}<br>
+    Sliced String: {{ myString | slice: 0:5 }}
