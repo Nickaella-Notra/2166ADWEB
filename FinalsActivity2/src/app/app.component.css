@@ -1,0 +1,106 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .example-label {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .example-button-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .mat-flat-button,
+  .mat-flat-button:link,
+  .mat-flat-button:visited {
+    background-color: #4a90e2; /* Blue background */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+  }
+  
+  .mat-flat-button:hover,
+  .mat-flat-button:active {
+    background-color: #357db3; /* Darker blue on hover */
+  }
+  
+  .mat-flat-button.disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .mat-flat-button.disabled:hover {
+    background-color: #cccccc;
+  }
+  
+  :host {
+
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .demo-section {
+    margin-bottom: 16px; /* Add margin between sections */
+  }
+  
+  .demo-section:last-child {
+    margin-bottom: 0; /* Remove margin from the last section */
+  }
+  
+  .badge,
+  .badge-large {
+    font-size: 10px; /* Decrease font size for smaller badges */
+    padding: 2px 6px; /* Adjust padding for smaller badges */
+    border-radius: 10px; /* Round badge corners */
+  }
+  
+  .badge-large {
+    font-size: 14px; /* Decrease font size for smaller large badges */
+    padding: 4px 8px; /* Adjust padding for smaller large badges */
+  }
+  
+  .example-section {
+    margin: 12px 0;
+  }
+  
+  .example-margin {
+    margin: 0 12px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin-top: 4px;
+  }
+
+  .example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  
+
+
+  

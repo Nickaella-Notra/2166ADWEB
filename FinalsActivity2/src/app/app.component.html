@@ -1,0 +1,93 @@
+<section><div class="example-label">By Nickaella Notra WD-301</div></section>
+<section>
+  <div class="example-label">Buttons</div>
+  <div class="example-button-row">
+    <button mat-button color="#add8e6" style="background-color: #add8e6; color: #333; border-radius: 25px;">Basic</button>
+    <button mat-raised-button color="#ffb6c1" style="background-color: #ffb6c1; color: #333; border-radius: 25px;">Raised</button>
+    <button mat-stroked-button color="#b39ddb" style="border-color: #b39ddb; color: #b39ddb; border-radius: 25px;">Stroked</button>
+    <button mat-flat-button color="#ffccff" style="background-color: #ffccff; color: #333; border-radius: 25px;">Flat</button>
+    <button mat-flat-button color="#d3d3d3" disabled style="background-color: #d3d3d3; color: #333; border-radius: 25px;">Disabled Flat</button>
+    <a mat-flat-button color="#e1bee7" href="https://www.google.com/" target="_blank" style="background-color: #e1bee7; color: #333; text-decoration: none; padding: 10px 20px; border-radius: 25px;">Link</a>
+  </div>
+</section>
+
+<br>
+<section class="material-app">
+  <div class="example-label">Badges</div>
+  <div class="demo-section">
+    <span class="text-with-badge">Text with a badge</span>
+    <span matBadge="4" matBadgeOverlap="false" class="badge"></span>
+  </div>
+
+  <div class="demo-section">
+    <span class="text-with-badge">Text with large badge</span>
+    <span matBadge="1" matBadgeSize="large" class="badge-large"></span>
+  </div>
+
+  <div class="demo-section">
+    <span class="text-with-badge">Button with a badge on the left</span>
+    <button mat-raised-button color="primary" class="action-button"
+      matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+      Action
+    </button>
+  </div>
+</section>
+
+<br>
+
+<section class="example-section">
+  <div class="example-label">Checkboxes</div>
+  <mat-checkbox color="#add8e6" style="background-color: #add8e6; text-align: center; width:10%; color:  #333; border-radius: 25px;" class="example-margin">Check me!!!!!</mat-checkbox>
+  <br>
+  <mat-checkbox color="#add8e6" style="background-color: #add8e6; text-align: center; width:10%; color:  #333; border-radius: 25px;" class="example-margin" [disabled]="true">Disabled</mat-checkbox>
+</section>
+
+<br>
+<section class="material-app">
+  <div class="example-label">Cards</div>
+  <mat-card class="example-card" style="background-color: white;">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>
+        <br>
+        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+        bred for hunting.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button color="primary">LIKE</button>
+      <button mat-button color="primary">SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+</section>
+
+<br>
+
+<section class="material-app" style="background-color: white;">
+  <div class="example-label">Formfields</div>
+  <mat-form-field class="example-form-field">
+    <mat-label>Input</mat-label>
+    <input matInput class="white-input">
+  </mat-form-field>
+  
+  <mat-form-field class="example-form-field">
+    <mat-label>Select</mat-label>
+    <mat-select class="white-input">
+      <mat-option value="one">First option</mat-option>
+      <mat-option value="two">Second option</mat-option>
+    </mat-select>
+  </mat-form-field>
+  
+  <mat-form-field class="example-form-field">
+    <mat-label>Textarea</mat-label>
+    <textarea matInput class="white-input"></textarea>
+  </mat-form-field>
+</section>
+
+
