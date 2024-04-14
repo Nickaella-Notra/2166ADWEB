@@ -1,0 +1,52 @@
+/* Container styling */
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial;
+  }
+  
+  /* Heading styling */
+  .container p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input styling */
+  .container input {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: calc(100% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Button styling */
+  .container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Book item styling */
+  .container h3 {
+    margin-top: 20px;
+  }
+  
+  .container h3 b {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
